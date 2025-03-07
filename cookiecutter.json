@@ -1,0 +1,7 @@
+{
+  "project_name": "My TypeScript Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "description": "A new TypeScript project",
+  "author_name": "Your Name",
+  "version": "0.1.0"
+}

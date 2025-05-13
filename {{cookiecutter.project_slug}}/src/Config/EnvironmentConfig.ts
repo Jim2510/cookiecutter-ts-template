@@ -1,5 +1,5 @@
-import {isDefined} from "../isDefined";
-import {EnvironmentEnum} from "./EnvironmentEnum";
+import { isDefined } from "../isDefined.js";
+import { EnvironmentEnum } from "./EnvironmentEnum.js";
 
 export class EnvironmentConfig<T extends string = EnvironmentEnum> {
     constructor(

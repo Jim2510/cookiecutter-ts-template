@@ -10,10 +10,10 @@
     "lint": "eslint 'src/**/*.{js,ts}'",
     "prettier": "prettier --write src",
     "lint:fix": "eslint 'src/*/**/*.{js,ts}' --fix",
-    "check": "yarn lint && yarn build:ts && yarn test",
-    "coverage": "c8 yarn run test",
-    "start": "node --enable-source-maps ./dist/index.js",
-    "build": "../../node_modules/.bin/tsc"
+    "check": "npm lint && npm build:ts && npm test",
+    "coverage": "c8 npm run test",
+    "start": "npm run build && node --enable-source-maps ./dist/index.js",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/chai": "^4.3.6",
@@ -21,6 +21,9 @@
     "@types/node": "^20.5.9",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
+    "@types/express": "^5.0.1",
+    "@types/mongodb": "^4.0.7",
+    "mongodb": "^6.15.0",
     "c8": "^8.0.1",
     "chai": "^4.3.8",
     "dotenv-cli": "^7.3.0",
@@ -29,12 +32,21 @@
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-tsdoc": "^0.2.17",
+    "reflect-metadata": "^0.2.2",
     "mocha": "^10.2.0",
+    "email-validator": "^2.0.4",
+    "nanoid": "^5.1.5",
+    "axios": "^1.7.2",
+    "axios-retry": "^4.4.2",
     "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
-    "ts-mockito": "^2.6.1"
+    "ts-mockito": "^2.6.1",
+    "tsyringe": "^4.10.0",
+    "express": "^5.1.0"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
